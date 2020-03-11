@@ -1,0 +1,11 @@
+"FakeRank_Intermediary"
+{
+	"mode"	"0"		// Режим работы. 0 - по FastDl ссылке; 1 - по внешней ссылке
+					// Mode of operation. 0 - by FastDl link; 1 - by external link
+
+// 		Если mode = 1	| 	If mode = 1
+//	"id ранга"	"прямая ссылка к картинке"
+// 	"id id" 	"direct link to the picture"
+
+	"51" 	"https://i.imgur.com/1JhzebM.png"
+}
