@@ -9,3 +9,7 @@
 
 	"51" 	"https://i.imgur.com/1JhzebM.png"
 }
+
+// Ошибки и их решения:
+// Errors and their solutions:
+// https://hlmod.ru/threads/csgo-sozdanie-prevjushki-v-xinte-iz-svg-fajla.51672/#post-453353

@@ -11,20 +11,20 @@ public Plugin myinfo =
 }
 
 char FastDl_URL[256];
+
 KeyValues kv;
 bool g_mode;
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
 {	
-
 	if(GetEngineVersion() != Engine_CSGO)
 	{
 		Format(error, err_max, "This plugin works only on CS:GO");
 		return APLRes_SilentFailure;
 	}
 
-	CreateNative("Intermediary_ShowHintFakeRank", Native_Intermediary_ShowHintFakeRank);
-	MarkNativeAsOptional("Intermediary_ShowHintFakeRank");
+	CreateNative("IFR_ShowHintFakeRank", Native_Intermediary_ShowHintFakeRank);
+	MarkNativeAsOptional("IFR_ShowHintFakeRank");
 
 	RegPluginLibrary("Intermediary_FakeRank");
 	return APLRes_Success;
@@ -111,4 +111,5 @@ stock void LoadCfg()
 		SetFailState("Couldn't parse file %s", sBuffer);
 
 	g_mode = view_as<bool>(kv.GetNum("mode", 0));
+	
 }
